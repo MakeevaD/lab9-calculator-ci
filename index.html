@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Умный Калькулятор</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="calc-container">
+    <h1>Умный Калькулятор</h1>
+    <div class="number-inputs">
+      <input id="num1" type="number" placeholder="Первое число" step="any" />
+      <input id="num2" type="number" placeholder="Второе число" step="any" />
+    </div>
+
+    <select id="operationType">
+      <option value="sum">Сложение</option>
+      <option value="diff">Вычитание</option>
+      <option value="prod">Умножение</option>
+      <option value="quot">Деление</option>
+      <option value="exp">Степень</option>
+      <option value="root">Корень</option>
+    </select>
+
+    <button id="runCalc">Посчитать</button>
+    <div id="output" class="output-area"></div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
